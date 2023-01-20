@@ -1,0 +1,392 @@
+/* google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  /* color variables */
+  :root{
+    --base-shade-1:#00a8fa;
+    --white-shade-1:#fff;
+    --white-shade-2:#d7e1f3;
+    --black-shade-1:#232323;
+    --black-shade-2:#676a8b;
+    --grad-color-1:0,180,250;
+    --grad-color-2:21,120,255;
+  
+
+  /* font-size variables */
+  --base-font-size: 1.6rem;
+
+  /* heading variables */
+  --heading-font-size-1:4rem;
+  --heading-font-size-2:3.2rem;
+  --heading-font-size-3:2rem;
+  --heading-font-size-4:1.8rem;
+
+  /* border-radius */
+  --border-radius-1:1rem;
+  --border-radius-1:0.5rem;
+}
+
+/* base styles */
+
+*,
+*,::before,
+*,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body section */
+body{
+    font-family: "poppins",sans-serif;
+}
+/* whole */
+html{
+    font-size: 89.23%;
+    scroll-behavior: smooth;
+}
+/* utility */
+section,footer{
+    padding: 5rem 5rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.column{
+    width: 100%;
+}
+.section_desc{
+    text-align: center;
+    margin: auto;
+}
+h1{
+   font-size: var(--heading-font-size-1);
+   color: var(--black-shade-1);
+   line-height: 1.3;
+   word-spacing: 1.2rem;
+   margin-bottom: 2rem;   
+}
+h2{
+    font-size: var(--heading-font-size-2);
+    color: var(--black-shade-1);
+    font-weight: 500;
+    text-align: center;
+}
+h3{
+    font-size: var(--heading-font-size-3);
+    color: var(--black-shade-1);
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+       
+ }
+h4{
+    font-size: var(--heading-font-size-4);
+    color: var(--black-shade-2);
+    margin: 1.5rem;
+}
+p,button{
+    /* font-size: var(--base-font-size); */
+    color: var(--black-shade-2);
+    font-weight: 500;
+    line-height: 1rem;
+}
+ .btn{ 
+    background: transparent;
+    border: none;
+    border-radius: var(--black-shade-2);
+    padding: 2rem 1rem;
+    margin: 1.2rem 1.5rem;
+ }
+
+ .primary_btn{
+    background-color:var(--base-shade-1);
+    color: var(--white-shade-1);
+ }
+
+ .secondary_btn{
+    border: 0.3rem solid;
+    background-color: var(--base-shade-1);
+    color: var(--white-shade-1)
+ }
+
+ /* header */
+ header{
+position: fixed;
+top: 0;
+width: 100%;
+height: 6rem;
+background-color: var(--white-shade-1);
+box-shadow: 0 0 50px 0 grey
+ }
+
+ nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center ; 
+    padding: 2rem 3rem;
+   
+    
+ }
+
+ nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+   
+    
+ }
+ nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+ }
+ nav a#logo{
+    color: var(--base-shade-1);
+    font-weight: 700;
+
+ }
+
+ section.hero{
+    margin-top: 10%;
+    background-image: url(../project-1/images/abstract-gradient-blue-orange-panorama-horizontal-vector-sunset-nature-background_105738-1801.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+ }
+
+section #image_shape{
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    height: 100%;
+ }
+
+ section .hero-content{
+    /* border: 1px solid black; */
+    text-align: justify;
+    width: 75%;
+    /* border: 1px solid black; */
+    margin-left: 5rem;
+    /* background-color: #e2e2e2; */
+}
+
+section .hero-content p{
+    text-align: justify;
+    line-height: 1.5rem;
+    word-spacing: 10px;
+    text-indent: 100px;
+
+}
+ /* features  */
+.features{
+    background-color: #cfccff;
+}
+ .features h2{
+    font-size: var(--heading-font-size-2);
+ }
+ .features .feature_desc{
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-size: var(--base-font-size);
+ }
+.features .row{
+    align-items: stretch;
+    /* border: 1px solid black; */
+ }
+
+ .features .column{
+    padding: 3rem 2rem;    
+ }
+
+ .features .column p{
+    text-align: justify;
+    word-spacing: 2px;    
+ }
+
+ .features h3{
+    margin: 2rem 0;
+ }
+
+ .features i{
+    display: block;
+    font-size: 3.5rem;
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    background-color: var(--base-shade-1);
+    text-align: center;
+    padding: 0.5rem 0;
+    color: var(--white-shade-1);
+    border:var(--border-radius-1);
+ }
+
+ .features .column:hover{
+    background-color: var(--base-shade-1);
+    
+ }
+ .features .column:hover h3{
+    color: var(--white-shade-1);
+ }
+  .features .column:hover p{
+    color: var(--white-shade-1);
+  }
+
+ .coarse-btn .secondary_btn{
+   display:flex;
+   justify-content: center;
+  }
+
+  .coarses {
+   width: 100%;
+   /* border: 1px solid black; */
+     
+}
+.coarses .coarse_desc{
+   padding: 2rem 3rem;
+   text-align: justify;
+   line-height: 2rem;
+   font-size: var(--base-font-size);   
+}
+.coarses img{
+  width: 350px;
+  height: 200px;
+}
+
+.coarses .coarse-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.coarses .coarses_para{
+   text-align: justify;
+   font-size: 1.2rem;
+   line-height: 1.5rem;
+   word-spacing: 2px;
+}
+ /* testimonial section */
+ .testimonial{
+   width: 100%;
+   background-color: var(--white-shade-2);
+ }
+ .testimonial img{
+   width: 350px;
+   height: 250px;
+ }
+ .testimonial .rows{
+   display: flex;
+   gap: 20px; 
+}
+ .testimonial .column{
+   padding: 20px;
+   text-align: center;
+ }
+ .testimonial .testimonial_image img{
+   padding: 10px;
+   background-color:var(--white-shade-1);
+   margin: 0;
+   width: 150px;
+   height: 150px;
+ }
+
+ .testimonial .section_desc{
+   text-align: center;
+   padding: 2rem 3rem;
+   font-size: var(--base-font-size);
+ }
+
+ .testimonial .rows .column .testimonial_image p{
+   font-size: var(--base-font-size);
+   text-align: justify;
+   line-height: 1.5rem;
+   padding: 3rem;
+ }
+
+ .download_app{
+   width: 100%;
+ }
+.download_app .row .column img{
+   width: 500px;
+   display: flex;
+}
+ .download_app .row .column .app_features{
+   text-align: center;
+   padding: 3rem;
+
+ }
+ 
+.download_app .row .column .app_features i{
+   display: block;
+   font-size: 3.5rem;
+   height: 6rem;
+   width: 6rem;
+   margin: auto;
+   text-align: center;
+   padding: 0.5rem 0;
+   border:var(--border-radius-1);
+}
+ .download-app .download-btn{
+   width: 100px;
+   height: 100px;
+   padding: 3rem;
+   margin-top: 50%;
+ }
+ .download_app .download-btn img{
+
+width: 100px;
+height: 100px;
+}
+.download_app .section_desc{
+   text-align: center;
+   font-size: var(--base-font-size);
+   padding: 1.2rem;
+}
+
+.download_app .row .column .app_features p{
+   text-align: justify;
+   font-size: var(--base-font-size);
+   line-height: 2rem;
+}
+
+.footer{
+   background-color:#25161b;
+   }
+   .footer .row-footer-about h3{
+      color: #929aab;
+   }
+.footer .row-footer-about .footer_division{
+   display: flex;
+   flex-direction: column;
+}
+.footer .row-footer-about  p{
+   color:#929aab;
+   text-align: center;
+   padding: 2rem;
+   line-height: 1.5rem;
+   font-size: var(--base-font-size);
+}
+.footer .row .column{
+   color:#929aab; 
+     font-size: var(--base-font-size);
+}
+.footer .row-footer-about .rows .column h4{
+   font-size: var(--base-font-size);
+   color:#929aab;
+}
+ .footer .row-footer-about .social_links{
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   padding: 3rem;
+ }
+ .footer .row-footer-about .social_links a {
+   display: block;
+   font-size: 1.5rem;
+   text-decoration: none;
+ }
