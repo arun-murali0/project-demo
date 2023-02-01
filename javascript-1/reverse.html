@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse any number</title>
+</head>
+<body>
+    <script>
+       let num = prompt("enter any number to reverse");
+      let reverse = 0;
+      while(num !== 0)
+      {
+       reverse = reverse*10;            
+       reverse = reverse+(num%10);
+       num = Math.trunc(num/10);
+       }
+     document.write(reverse);
+    </script>
+</body>
+</html>
